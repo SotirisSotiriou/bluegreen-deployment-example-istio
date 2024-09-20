@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bluegreen-example-svc
+  namespace: bluegreen-example
+spec:
+  selector:
+    app: bluegreen-example
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
